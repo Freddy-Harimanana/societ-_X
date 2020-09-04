@@ -7,14 +7,38 @@ body {
 .Logo{
 	background: #878809;  
 	font-family: arial;
-	color: white;
+	color: #000;
 	width : 80%;
 	padding: 30px;
 	margin-left: 10%;
 	text-align: center;
-	font-size: 30px;
-
+	font-size: 100px;
+	font-weight: bold;
+	
 }
+
+.pts{
+	width: 25px;
+	height: 25px;
+	background-color: yellow;
+	border-radius: 100%;
+	position: relative;
+	left: 58%;
+	bottom: 44px;
+	animation-name: sayna;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+	@keyframes sayna{
+	0%   {background-color:white; }
+  25%  {background-color:yellow; }
+  50%  {background-color:white; }
+ /* 75%  {background-color:green; }
+  100% {background-color:#878809; }*/
+
+	}
+
 
 .but{
 	letter-spacing: 5px;
@@ -26,10 +50,15 @@ body {
 	background:    #c4f372   ;
 	padding: 20px;
 	border-radius: 45px;
+
+	/*transition: all 2s*/ 
 }
 .but:hover{
 	/*text-decoration: underline;*/
 	background: white;
+	border-color: #333;
+	transform: rotate(1280deg);
+	border-radius: 100%;
 
 }
 
@@ -72,8 +101,18 @@ padding-bottom: 7%;
 font-size: 30px;
 margin-top: 1%;
 border-radius: 9%;
+
+	transition: all 2s; /* temps de changement quand la souris passe  */
+
 }
 
+.corp ul li:hover{
+	background-color: black;
+
+	border-color: #333;
+	transform: rotate(1080deg);
+	border-radius: 50%;
+}
 
 hr{	/*hr en pointillé*/ 
 margin-left: 135px;
@@ -90,7 +129,6 @@ h1{
 	text-align: center;
 	color:  #1d270b;
 	font-size: 50px;
-
 }
 
 h2{
@@ -98,12 +136,10 @@ h2{
 	font-family: sofia ;
 	color:  #1d270b;
 	font-size: 40px;
-
 }
 
 p{
 	margin-left : 105px;
 	font-size: 30px;
-
 }
 
