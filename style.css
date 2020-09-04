@@ -28,6 +28,7 @@ header ul {
 	padding: 30px;
 	background: #878809;
 	font-family: sofia;
+	text-align: center;
 }
 
 header ul li:first-child{
